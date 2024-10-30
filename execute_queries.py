@@ -1,4 +1,4 @@
-from queries import *
+from query_utils import *
 
 con = connect_to_db()
 

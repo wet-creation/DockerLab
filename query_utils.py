@@ -37,7 +37,7 @@ def get_table_data(cursor, table_name):
     headers = [i[0] for i in cursor.description]
     print(f"\nДані з таблиці {table_name}:")
     print(" | ".join(f"{header:<20}" for header in headers))
-    print('-' * (len(headers) * 20 + (len(headers) - 1) * 3))  # Dynamic width for separators
+    print('-' * (len(headers) * 20 + (len(headers) - 1) * 3))
     for row in data:
         print(" | ".join(f"{str(value):<20}" for value in row))
 
